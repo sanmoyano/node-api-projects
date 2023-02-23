@@ -11,8 +11,6 @@ const { response } = require('express')
 app.use(cors())
 app.use(express.json())
 
-const projects = []
-
 app.get('/', (req, res) => {
   res.send('<h1>API SM - projects</h1>')
 })
