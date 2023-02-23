@@ -13,7 +13,7 @@
       },
       {
         "src":"/api/projects",
-        "dest":"https://node-api-projects.vercel.app/api/projects"
+        "dest":"https://node-api-projects.vercel.app/projects"
       } 
     ]
 }
