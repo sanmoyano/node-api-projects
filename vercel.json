@@ -13,7 +13,7 @@
       },
       {
         "src":"/(.*)",
-        "destination":"/api/projects"
+        "dest":"/api/projects"
       }
     ]
 }
