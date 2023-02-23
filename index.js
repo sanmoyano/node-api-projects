@@ -15,8 +15,9 @@ app.use(express.json())
 //   res.send('<h1>API SM - projects</h1>')
 // })
 
-app.get('/api/projects', (req, res, next) => {
+app.get('/', (req, res, next) => {
   Project.find({}).then(projects => {
+    res.status(200).end()
     res.json(projects)
   }).catch(err => next(err))
 })
