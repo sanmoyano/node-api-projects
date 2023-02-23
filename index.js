@@ -11,13 +11,12 @@ const { response } = require('express')
 app.use(cors())
 app.use(express.json())
 
-// app.get('/', (req, res) => {
-//   res.send('<h1>API SM - projects</h1>')
-// })
+app.get('/', (req, res) => {
+  res.send('<h1>API SM - projects</h1>')
+})
 
-app.get('/', (req, res, next) => {
+app.get('/api/projects', (req, res, next) => {
   Project.find({}).then(projects => {
-    res.status(200).end()
     res.json(projects)
   }).catch(err => next(err))
 })
