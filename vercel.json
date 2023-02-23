@@ -12,7 +12,7 @@
         "dest":"/"
       },
       {
-        "src":"/api/*",
+        "src":"./index.js/api/projects",
         "dest":"https://node-api-projects.vercel.app/api/projects"
       } 
     ]
